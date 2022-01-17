@@ -8,7 +8,7 @@
     "build": "npx @11ty/eleventy"
   },
   "keywords": [],
-  "author": "Your Name",
+  "author": "Chris Stein",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1"
