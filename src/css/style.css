@@ -50,3 +50,143 @@ html {
   ================================================ */
   /* Add your CSS for the site here */
 
+
+  /* From: https://codepen.io/profstein/pen/yLpXNaN */
+
+  /* Basic Typography 
+================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&family=Nunito:ital,wght@0,200;0,400;1,400&display=swap');
+
+/* The html and body selectors below set the base type for the entire page */
+html {
+    font-size: 1em;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+/* This adds space between paragraphs and list items*/
+/* NOTE: most Navigations use list items so you will need to explicity set the margins on those so this rule doesn't mess up your navigation styling */
+p,
+li {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+  /* Base Styling for headings  */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    font-family: 'Jura', sans-serif;
+  }
+
+/* Basic Responsive Images and Video 
+================================================== */
+img,video{
+  width: auto; 
+  height: auto;
+  max-width: 100%; 
+}
+
+
+/* Basic responsive Layout 
+================================================== */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.page-footer{
+  margin: 3rem auto;
+  text-align: center;
+  max-width: 70chr;
+}
+
+@media screen and (min-width: 600px){
+  .grid{
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid .section-head{
+    grid-column: 1/-1;
+  }
+}
+/* end min-width: 600px */
+
+
+@media screen and (min-width: 1200px){
+  .grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 1500px;
+  }
+}
+/* end min-width: 1200px */
+
+/* =================================================
+   Basic Color
+  ================================================== */
+
+body{
+    background-color: #DFF0F9;
+}
+
+p {
+  color: #4d4d4d;
+/*   margin-left: 6px; */
+}
+
+/* ===================================================
+   CARDS
+  ================================================== */
+.card{
+  background-color: white;
+  border-radius: 0.4rem;
+/*   border: 1px solid grey; */
+/*   padding: 20px; */
+  overflow: hidden;
+  box-shadow: 8px 5px 30px 0px rgba(0,0,0,0.44);
+-webkit-box-shadow: 8px 5px 30px 0px rgba(0,0,0,0.44);
+-moz-box-shadow: 8px 5px 30px 0px rgba(0,0,0,0.44);
+}
+
+h1, h2{
+  color: black;
+/*   margin-left: 6px; */
+}
+
+.card__img {
+  display: block;
+  width: 100%;
+/*   padding: 5px; */
+}
+
+
+
+.card__btn {
+  display: block;
+  width: 220px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+  color: blue;
+  background-color: lavender;
+  border-radius: 0.4rem;
+  border: 0px;
+/*   margin-left: 6px; */
+}
+
+.card__content{
+  padding: 0 40px 20px 40px;
+}
