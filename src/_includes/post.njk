@@ -12,6 +12,29 @@ layout: base.njk
 {{ content | safe }}
 
 <footer class="post-footer">
+{% set previousPost = collections.post | getPreviousCollectionItem(page) %}
+{% set nextPost = collections.post | getNextCollectionItem(page) %}
+{% set currentPost = collections.post | getCollectionItem(page) %}
+{% if nextPost %}
+
+{% else %}
+    {% set nextPost = collections.post[0] %}
+{% endif %}
+
+{% if previousPost %}
+
+{% else %}
+    {% set previousPost = collections.post[collections.post.length-1] %}
+{% endif %}
+
+<p><a href="{{nextPost.url}}">Next Post </a></p>
+<p>{% if nextPost %}Next Post: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>{% endif %}</p>
+
+<p>
+    {% if previousPost %}Previous Blog Post: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>{% endif %}
+</p>
+
+
 tags: {% for tag in tags %}
 <a href="/tags/{{tag}}/">{{tag}}</a> &nbsp;|&nbsp;
 {% endfor %}
