@@ -7,8 +7,14 @@ tags:
   - boat
   - blue
 author: Author 2
+postImg: "https://images.unsplash.com/photo-1506318164473-2dfd3ede3623?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=3300&amp;q=80"
+postImgAlt: 'blah blah'
+description: 'lorem ipsum dolor'
 ---
-
+<figure>
+  <img src="{{ postImg }}" alt="{{ postImgAlt }}">
+</figure>
+{{ title }}
 This is an example post. The third one. This example shows an alternative syntax for lists in YAML. In this case each list item is on a separate line with a dash in front of it
 
 ```
