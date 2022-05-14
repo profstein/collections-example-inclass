@@ -6,7 +6,6 @@ tags: navItem
 # {{title}}
 This is the home page. 
 
-
 ## Blog Posts
 
 <section class="grid">
