@@ -4,7 +4,11 @@ layout: base.njk
 tags: navItem
 ---
 # {{title}}
-This is the home page. Click on Blog to see the blog.
+This is the home page. 
+
+
+## Blog Posts
+
 <section class="grid">
 {% for post in collections.breeze %}
 <article class="card">
