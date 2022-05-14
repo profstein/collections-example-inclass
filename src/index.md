@@ -6,7 +6,7 @@ tags: navItem
 # {{title}}
 This is the home page. 
 
-Click on Blog to see the blog.
+## Blog Posts
 
 <section class="grid">
 {% for post in collections.breeze %}
