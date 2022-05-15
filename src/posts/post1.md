@@ -1,5 +1,5 @@
 ---
-title: Post 1
+title: Post 1 with a long title
 layout: post.njk
 tags: ['post', 'sand', 'breeze', 'sea', 'sun']
 author: Author 1
