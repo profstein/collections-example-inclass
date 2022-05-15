@@ -1,5 +1,9 @@
-<nav>
-  <div role="list">
+<nav class="site-nav">
+  <div class="logo">
+    Logo
+  </div>
+  <a href="#" class="hamburger" id="nav-toggle"><span></span></a>
+  <div class="links" id="nav-links" role="list">
     {% for navItem in collections.navItem %}
       <a 
         {% if navItem.url === page.url %}aria-current="page"{% endif %} 
