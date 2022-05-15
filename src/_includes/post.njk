@@ -9,7 +9,9 @@ layout: base.njk
     </div>
 </header>
 
+<div class="post-main">
 {{ content | safe }}
+</div>
 
 <footer class="post-footer">
 {% set previousPost = collections.post | getPreviousCollectionItem(page) %}
@@ -27,13 +29,16 @@ layout: base.njk
     {% set previousPost = collections.post[collections.post.length-1] %}
 {% endif %}
 
-<p>
-    {% if nextPost %}Next Post: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>{% endif %}
-</p>
+<div class="next-prev-buttons">
+    {% if previousPost %}
+        <button class="card__btn"><a href="{{ previousPost.url }}"><span>&larr;</span> {{ previousPost.data.title }} </a></button>
+    {% endif %}
+    
+    {% if nextPost %} 
+         <button class="card__btn"><a href="{{ nextPost.url }}">{{ nextPost.data.title }} <span>&rarr;</span></a></button>
+    {% endif %}    
+</div>
 
-<p>
-    {% if previousPost %}Previous Blog Post: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>{% endif %}
-</p>
 
 
 <h3>tags:</h3></tags:> {% for tag in tags %}
