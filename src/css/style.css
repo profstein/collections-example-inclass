@@ -318,3 +318,11 @@ h1, h2{
       margin: 0 1em;
     }
   }
+
+
+  /* ===========
+  foooter
+  ========== */
+footer{
+  margin: 3rem 1rem;
+}
