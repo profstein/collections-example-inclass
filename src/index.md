@@ -4,9 +4,10 @@ layout: base.njk
 tags: navItem
 ---
 # {{title}}
-This is the home page. 
+This is the home page. Here is where everything is
 
 ## Blog Posts
+Showing breeze tag only.
 
 <section class="grid">
 {% for post in collections.breeze %}
