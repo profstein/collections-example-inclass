@@ -206,8 +206,27 @@ h1, h2{
   justify-content: space-between;
 }
 
-.next-prev-buttons .card__btn{
+.next-prev-buttons .btn{
+  display: block;
+  padding: 1rem;
+  font-size: 1.4rem;
+  text-align: center;
+  border-radius: 0.4rem;
+  border: 0px;
   margin: 0;
+  background-color: #555;
+  color: #DFF0F9;
+  width: 190px;
+
+}
+
+.next-prev-buttons .btn a{
+  text-decoration: none;
+}
+
+.next-prev-buttons .btn a:visited{
+  color:#DFF0F9;
+  color: #eee;
 }
 
 

@@ -31,11 +31,11 @@ layout: base.njk
 
 <div class="next-prev-buttons">
     {% if previousPost %}
-        <button class="card__btn"><a href="{{ previousPost.url }}"><span>&larr;</span> {{ previousPost.data.title }} </a></button>
+        <button class="btn"><a href="{{ previousPost.url }}"><span>&larr;</span> {{ previousPost.data.title }} </a></button>
     {% endif %}
     
     {% if nextPost %} 
-         <button class="card__btn"><a href="{{ nextPost.url }}">{{ nextPost.data.title }} <span>&rarr;</span></a></button>
+         <button class="btn"><a href="{{ nextPost.url }}">{{ nextPost.data.title }} <span>&rarr;</span></a></button>
     {% endif %}    
 </div>
 
