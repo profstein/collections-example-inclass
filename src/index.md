@@ -4,11 +4,13 @@ layout: base.njk
 tags: navItem
 ---
 # {{title}}
+
 This is the home page. To see all of the blog posts, click Blog in the navigation
 
-## Breeze Blog Posts
+## Blog Posts
 
 All of the posts tagged "breeze."
+
 
 <section class="grid">
 {% for post in collections.breeze %}
